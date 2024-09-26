@@ -1,0 +1,3 @@
+[submodule "src/Effekseer"]
+	path = src/Effekseer
+	url = https://github.com/effekseer/Effekseer
