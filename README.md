@@ -10,6 +10,9 @@ Changes included in inital commit:
 - Fixed include directives to point to correct Effekseer headers
 - stripped Swig build to only build for java, as this is only for Minecraft builds.
 
+## Note: For this to build correctly, you must have $JAVA_HOME exported before trying to build, else it will fail to find the JNI.
+### As an example, mine is set to `/usr/lib/jvm/default` which is a symlink to `/usr/lib/jvm/java-17-openjdk`
+
 To Build:
 ```
 git clone https://github.com/ripjackie/EffekseerNativeForJava.git
