@@ -15,8 +15,6 @@ add_library(
   EffekseerManagerCore.cpp
 )
 
-set_property(TARGET EffekseerCore PROPERTY C_STANDARD 17)
-
 target_include_directories(
   EffekseerCore
   PUBLIC
