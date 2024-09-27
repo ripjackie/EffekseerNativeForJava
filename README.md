@@ -25,3 +25,7 @@ cmake -B build
 cmake --build build
 ```
 `libEffekseerNativeForJava.so` Will be in `build/src/Core/libEffekseerNativeForJava.so`
+
+To Install:
+Copy `libEffekseerNativeForJava.so` to your instances minecraft folder. Eg:
+`cp build/src/Core/libEffekseerNativeForJava.so $HOME/.local/share/PrismLauncher/instances/Prominince2/minecraft/`
