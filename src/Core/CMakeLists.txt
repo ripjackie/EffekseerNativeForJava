@@ -48,6 +48,7 @@ target_compile_features(EffekseerCore PUBLIC cxx_std_14)
 
 if(NOT WIN32)
   find_package(OpenGL REQUIRED)
+  set(OpenGL_GL_PREFERENCE ON)
   target_link_libraries(
     EffekseerCore
     PUBLIC
@@ -73,6 +74,8 @@ if(${SWIG_FOUND} AND ${JNI_FOUND})
         LANGUAGE Java
         SOURCES EffekseerCore.i
     )
+
+    set_property(TARGET EffekseerNativeForJava PROPERTY SWIG_COMPILE_OPTIONS -package Effekseer.swig)
 
     set_property(TARGET EffekseerNativeForJava PROPERTY C_STANDARD 17)
 
